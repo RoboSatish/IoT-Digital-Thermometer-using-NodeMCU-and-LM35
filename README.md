@@ -1,1 +1,5 @@
 # IoT-Digital-Thermometer-using-NodeMCU-and-LM35
+LM35 is a analog linear temperature sensor. Its output is proportional to the temperature (in degree Celsius). The operating temperature range is from -55°C to 150°C. The output voltage varies by 10mV in response to every  oC rise or fall in temperature. It can be operated from a 5V as well as 3.3 V supply and the stand by current is less than 60uA. 
+Note that LM35 is available in 3 series variations namely LM35A, LM35C and LM35D series. The main difference is in their range of temperature measurements. The LM35D series is designed to measure 0 to 100 degree Celsius, where as the LM35A series is designed to measure a wider range of -55 to 155 degree Celsius. The LM35C series is designed to measure from -40 to 110 degree Celsius.
+LM35 is an analog sensor so we have to convert this analog output to digital. For this we use ADC pin of NodeMCU which is defined as A0. We will connect the output of LM35 to A0.
+We have 3.3 V as output voltage on NodeMCU’s pins. So, we will use 3.3V as Vcc for LM35.
